@@ -1,0 +1,219 @@
+.main{
+    margin-left:10%;
+    margin-top:5%; 
+    margin-right:10%; 
+
+}
+
+body{
+    color:whitesmoke;
+    text-align: center;
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    background-image: url(./img/weather-background.jpg);
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 0px 1000px inset;
+    background-attachment: fixed;
+
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.days{
+
+    height: 630px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 7px;
+    margin: 60px 15px;
+    transition: .7s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    box-shadow: 0 50px 150px -20px rgba(0,0,0,.75);
+    color: white;
+    background-image: url(./img/weather-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.current-day{
+    height: 600px;
+    overflow: hidden;
+    border-radius: 7px;
+    margin: 60px 15px;
+    transition: .7s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    box-shadow: 0 50px 150px -20px rgba(0,0,0,1);
+    color: white;
+    background-image: url(./img/weather-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.days:hover,.current-day:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    border-radius: 10px;
+    box-shadow: 0 20px 300px -20px rgba(0,0,0,1);
+}
+
+.details{
+    margin-top:20px;
+}
+button {
+    padding: 10px 20px;
+    transition: all 0.5s;
+    border: 0 none;
+    border-radius: 5em;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-top:30px;
+    box-shadow: 2px 3px 6px rgb(43, 42, 42);
+    
+}
+
+.btn{
+    transition: all 0.5s;
+    border: 0 none;
+    border-radius: 5em;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: -8px;
+    outline: none;
+    background-color: #fff;
+}
+
+button:active,button:focus {
+    background: rgb(114, 47, 2);
+    color: white;
+    outline: none;
+}
+
+
+.action {
+    background-image: linear-gradient(rgb(199, 13, 100), rgb(190, 11, 95));
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+}
+
+.action:hover {
+    background-size: 100% 100%; 
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-image: url(./img/weather-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 1000px inset;
+}
+
+.text{
+
+}
+
+.clock{
+
+}
+
+.date-time{
+    margin: 10px 0 10px 0;
+    font-size: 24px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border:1px solid white;
+    border-radius: 20px;
+    background: rgb(114, 47, 2);
+}
+
+.current-day-temp{
+    margin: 10px 0 10px 0;
+    font-size: 24px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border:1px solid white;
+    border-radius: 20px;
+    background: rgb(114, 47, 2);
+    padding: 10px;
+}
+
+.day-night-temp, .max-min-temp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:20px;
+}
+
+.max-min-temp{
+    margin-bottom: 10px;
+}
+.location{
+    color: white;
+    margin-top:30px;
+    padding: 5px;
+}
+
+.input{
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+}
+
+.description{
+    text-transform: uppercase;
+}
+
+h1{
+    color:  rgb(253, 186, 1);
+    text-shadow: 2px 2px 4px rgb(245, 229, 0);
+    font-size: 70px;
+}
+
+table{
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+
+th{
+    font-weight: 500;
+    font-size: 18px;
+    color:  rgb(253, 186, 1);
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+
+tr {
+    font-weight: 400;
+    font-size: 19px;
+    color: #fff;
+    background-color: transparent;
+
+}
+
+.made-with-love {
+    margin-top: 40px;
+    padding: 10px;
+    clear: left;
+    text-align: center;
+    font-size: 14px;
+    font-family: arial;
+    color: #fff;
+}
+
+.made-with-love i {
+    font-style: normal;
+    color: #F50057;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+}
+
