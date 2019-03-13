@@ -17,17 +17,6 @@ class CurrentWeather extends Component {
     super(props);
     this.state = {
       givenLocation: "Miami,US",
-      city: undefined,
-      country: undefined,
-      date: undefined,
-      temperature: undefined,
-      max_temperature: undefined,
-      min_temperature: undefined,
-      description: undefined,
-      wind: undefined,
-      humidity: undefined,
-      pressure: undefined,
-      icon: undefined
     };
   }
 

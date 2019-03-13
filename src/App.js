@@ -104,7 +104,7 @@ class App extends Component {
         <div className="body">
          {weather.map(item => {
               return (
-                <Link key= {item.days} to="/hourley-updates" style={{ textDecoration: 'none'}}>
+                <Link key= {item.days} to="/hourley-forecast" style={{ textDecoration: 'none'}}>
                 <div className="days action">
                   <div className="date-time"><Moment unix format="dddd MMMM Do YYYY">{item.days}</Moment></div>
                   <div className="day-night-temp">
@@ -121,7 +121,7 @@ class App extends Component {
                       <p><b>Humidity : </b>{item.humidity}%</p>
                       <p><b>Pressure : </b>{item.pressure}hpa</p>
                       <p><b>Description : </b><span className="description">{item.description}</span></p>
-                      <p></p>
+                      <hr/>
                     </div>
                   </div>
                 </Link>
