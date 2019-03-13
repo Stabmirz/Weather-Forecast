@@ -14,9 +14,7 @@ class HourleyWeather extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      givenLocation: "Miami,US",
-      city:undefined,
-      country:undefined,
+      givenLocation: "Miami, US",
       weather:[],
     };
   }
@@ -77,7 +75,7 @@ class HourleyWeather extends Component {
     const {weather,givenLocation,city, country,} = this.state;
     return (
       <div className="main">
-       <div><h1>5 Days / 3 Hours Weather Forecast</h1></div> 
+       <div><h1>5 Day / 3 Hour Weather Forecast</h1></div> 
         <div className="location"><strong><span>{city}, </span><span>{country}</span></strong></div>
         <div className="date">
           <Moment format="ddd MMMM Do YYYY"><Time/></Moment>

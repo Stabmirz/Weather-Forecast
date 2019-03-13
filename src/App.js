@@ -18,9 +18,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      givenLocation: "Miami,US",
-      city:undefined,
-      country:undefined,
+      givenLocation: "Miami, US",
       weather:[]
     };
   }
@@ -54,7 +52,7 @@ class App extends Component {
       this.setState({
         city: this.state.data.city.name,
         country: this.state.data.city.country,
-        weather,
+        weather
       });
     });
   };
@@ -83,7 +81,7 @@ class App extends Component {
     const {weather, givenLocation, city, country,} = this.state;
     return (
       <div className="main">
-       <div><h1>16 Days Weather Forecast</h1></div>
+       <div><h1>16 Day / Daily Weather Forecast</h1></div>
         <div className="location"><strong><span>{city}, </span><span>{country}</span></strong></div>
         <div className="date">
           <Moment format="ddd MMMM Do YYYY"><Time/></Moment>
